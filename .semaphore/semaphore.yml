@@ -24,7 +24,7 @@ blocks:
             - chmod +x ./cc-test-reporter
             - ./cc-test-reporter before-build
             - bundle install --path vendor/bundle
-            - 'bundle exec rake db:setup'
+            - 'bundle exec rake db:create db:migrate'
             - bundle exec rspec
       epilogue:
         always:
