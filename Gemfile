@@ -10,6 +10,7 @@ gem 'rack-cors', require: 'rack/cors'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
 
 group :development, :test do
+  gem 'simplecov', require: false
   gem 'rspec-rails'
   gem 'shoulda-matchers'
   gem 'factory_bot_rails'
